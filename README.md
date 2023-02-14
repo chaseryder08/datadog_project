@@ -15,20 +15,9 @@ For this project I created a Centos VM using Vagrant, and installed the Datadog 
 ## STEP 1: 
 
 1) Spin up Centos machine 
-<br>
-<code>
-vagrant up
-<br>
-vagrant ssh
-<br>
-sudo yum update -y && sudo yum upgrade -y
-<br>
-</code>
-
-1) Create DD trial membership:
-2) Install DD Agent on VM : Create API key, run in CLI
-3) Check out DD config file - '/etc/datadog-agent/datadog.yaml'
-4) Open datadog.yaml - 
+2) Create DD trial membership:
+3) Install DD Agent on VM : Create API key, run in CLI
+4) Check out DD config file - '/etc/datadog-agent/datadog.yaml'
 <code>
 sudo vi /etc/datadog-agent/datadog.yaml
 </code>
