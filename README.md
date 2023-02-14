@@ -21,11 +21,6 @@ For this project I created a Centos VM using Vagrant, and installed the Datadog 
 <code>
 sudo vi /etc/datadog-agent/datadog.yaml
 </code>
-
-![img](img/dd2.png)
-
-![img](img/dd3.png)
-
 5) stop and restart dd agent to set changes: 
 6) Confirm DD agent is recognized on DD website/app and gathering metrics of VM:
 ![img](img/dd4.PNG)
