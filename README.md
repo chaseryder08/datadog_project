@@ -23,15 +23,17 @@ sudo vi /etc/datadog-agent/datadog.yaml
 </code>
 5) stop and restart dd agent to set changes: 
 6) Confirm DD agent is recognized on DD website/app and gathering metrics of VM:
+
 ![img](img/dd4.PNG)
-![img](img/dd5.PNG)   
-7) Install EPEL repo, install Stress to run fake cpu load to catch data/metric on VM. 
+![img](img/dd5.PNG)  
+ 
+1) Install EPEL repo, install Stress to run fake cpu load to catch data/metric on VM. 
 <code>
 sudo yum install epel-release
 <br>
 sudo yum install stress -y
 </code>
-8) Set up APACHE integration on DD:
+1) Set up APACHE integration on DD:
 * sudo yum install httpd
 * sudo systemctl start httpd.service | systemctl status httpd.service
 
