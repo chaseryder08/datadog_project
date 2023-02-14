@@ -24,11 +24,16 @@ sudo yum update -y && sudo yum upgrade -y
 </code>
 2) Create DD trial membership:
 3) Install DD Agent on VM : Create API key, run in CLI
+
 ![img](img/dd1.png)
+
 4) Check out DD config file - ' /etc/datadog-agent/datadog.yaml'
 5) Open datadog.yaml - <code>sudo vi /etc/datadog-agent/datadog.yaml</code>
+
 ![img](img/dd2.png)
 6) Config file - can change host name, set tags as directed:
+
+
 ![img](img/dd3.png)
 7) stop and restart dd agent to set changes: 
 <code>
@@ -37,6 +42,7 @@ sudo systemctl stop datadog-agent
 sudo systemctl start datadog-agent
 </code>
 8) Confirm DD agent is recognized on DD website/app and gathering metrics of VM:
+
 ![img](img/dd4.PNG)
 ![img](img/dd5.PNG)   
 9) Install EPEL repo, install Stress to run fake cpu load to catch data/metric on VM. 
@@ -48,6 +54,7 @@ sudo yum install stress -y
 10) Set up APACHE integration on DD:
 * sudo yum install httpd
 * sudo systemctl start httpd.service | systemctl status httpd.service
+
 ![img](img/dd6.PNG) 
 11) install mod status and enable to monitor web server load - https://www.tecmint.com/monitor-apache-web-server-load-and-page-statistics/
 ![img](img/dd7.PNG)
@@ -57,6 +64,7 @@ sudo yum install stress -y
 13) Ran stress test on machine to gather cpu metrics
 <br>
 <code>stress --cpu 2 --timeout 60</code>
+
 ![img](img/stress2.PNG)
 ![img](img/dd10.PNG)
 14) Create a monitor based on host and metrics: - if host is down, will get notification from monitoring
