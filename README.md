@@ -18,21 +18,15 @@ For this project I created a Centos VM using Vagrant, and installed the Datadog 
 2) Create DD trial membership:
 3) Install DD Agent on VM : Create API key, run in CLI
 4) Check out DD config file - '/etc/datadog-agent/datadog.yaml'
-<code>
-sudo vi /etc/datadog-agent/datadog.yaml
-</code>
 5) stop and restart dd agent to set changes: 
 6) Confirm DD agent is recognized on DD website/app and gathering metrics of VM:
 
 ![img](img/dd4.PNG)
 ![img](img/dd5.PNG)  
- 
+
 1) Install EPEL repo, install Stress to run fake cpu load to catch data/metric on VM. 
-<code>
-sudo yum install epel-release
-<br>
-sudo yum install stress -y
-</code>
+* sudo yum install epel-release
+* sudo yum install stress -y
 1) Set up APACHE integration on DD:
 * sudo yum install httpd
 * sudo systemctl start httpd.service | systemctl status httpd.service
