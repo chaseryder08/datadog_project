@@ -23,15 +23,11 @@ sudo vi /etc/datadog-agent/datadog.yaml
 </code>
 
 ![img](img/dd2.png)
-![img](img/dd3.png)
-5) stop and restart dd agent to set changes: 
-<code>
-sudo systemctl stop datadog-agent
-<br>
-sudo systemctl start datadog-agent
-</code>
-6) Confirm DD agent is recognized on DD website/app and gathering metrics of VM:
 
+![img](img/dd3.png)
+
+5) stop and restart dd agent to set changes: 
+6) Confirm DD agent is recognized on DD website/app and gathering metrics of VM:
 ![img](img/dd4.PNG)
 ![img](img/dd5.PNG)   
 7) Install EPEL repo, install Stress to run fake cpu load to catch data/metric on VM. 
