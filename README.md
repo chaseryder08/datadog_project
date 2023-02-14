@@ -16,14 +16,16 @@ For this project I created a Centos VM using Vagrant, and installed the Datadog 
 1) Spin up Centos machine 
 <br>
 <code>
-vagrant up 
-<br> 
+vagrant up
+<br>
 vagrant ssh
-<br> 
+<br>
 sudo yum update -y && sudo yum upgrade -y
+<br>
 </code>
-2) Create DD trial membership:
-3) Install DD Agent on VM : Create API key, run in CLI
+
+1) Create DD trial membership:
+2) Install DD Agent on VM : Create API key, run in CLI
 
 ![img](img/dd1.png)
 
